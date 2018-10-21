@@ -35,4 +35,7 @@ public class Car extends AbstractDocument implements HasModel, HasPrice, HasPart
     super(properties);
   }
 
+  public void clarityBotTest() {
+    //Just a test for Clarity-Bot update...
+  }
 }
