@@ -23,6 +23,7 @@
 package com.iluwatar.abstractdocument;
 
 import com.iluwatar.abstractdocument.domain.Car;
+import com.iluwatar.abstractdocument.domain.ClarityBot;
 import com.iluwatar.abstractdocument.domain.HasModel;
 import com.iluwatar.abstractdocument.domain.HasParts;
 import com.iluwatar.abstractdocument.domain.HasPrice;
@@ -71,6 +72,7 @@ public class App {
     carProperties.put(HasParts.PROPERTY, Arrays.asList(wheelProperties, doorProperties));
 
     Car car = new Car(carProperties);
+    new ClarityBot(carProperties);
 
     LOGGER.info("Here is our car:");
     LOGGER.info("-> model: {}", car.getModel().get());
