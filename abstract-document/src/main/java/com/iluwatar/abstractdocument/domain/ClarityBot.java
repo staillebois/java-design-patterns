@@ -24,18 +24,13 @@ package com.iluwatar.abstractdocument.domain;
 
 import java.util.Map;
 
-import com.iluwatar.abstractdocument.AbstractDocument;
-
 /**
- * Car entity
+ * ClarityBot entity
  */
-public class Car extends AbstractDocument implements HasModel, HasPrice, HasParts {
+public class ClarityBot extends Car{
 
-  public Car(Map<String, Object> properties) {
+  public ClarityBot(Map<String, Object> properties) {
     super(properties);
   }
 
-  public void clarityBotTest() {
-    //Just a test for Clarity-Bot update...
-  }
 }
